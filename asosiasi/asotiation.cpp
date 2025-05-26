@@ -7,5 +7,9 @@ class pasien { //asosiasi
 public:
     string nama;
     vector<dokter*> daftar_dokter;
-    pasien(string)    
-} 
+    pasien(string pNama) :nama(pNama){
+        cout << "Pasien" \"" << nama << "\" ada\n"; 
+    }      
+    void tambahDokter(dokter*);
+    void tambahDokter();
+};
